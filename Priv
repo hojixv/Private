@@ -1,0 +1,172 @@
+KillSwitch = {
+    ['Enabled'] = true,
+    ['FindGameProcess'] = nil,
+    ['EndGameProcess'] = true,
+},
+Intro = {
+    ['Enabled'] = true,
+    ['Game'] = true,
+    ['Process'] = true,
+},
+hojixv = {
+    ['Silent'] = {
+        Normal = {
+            ['Enabled'] = true,
+            ['HitChance'] = 100,
+        },
+        KeyBind = {
+            ['Enabled'] = true,
+            ['KeyBind'] = '=',
+            ['Notification'] = false,
+        },
+        HitPart = {
+            ['ClosestPart'] = false,      
+            ['HitPart'] = 'HumanoidRootPart',
+        },
+        Prediction = {
+            ['Enabled'] = true,
+            ['AutoPrediction'] = false, 
+            ['Prediction'] = 0.12567724521,
+        },
+    },
+    ['CamLock'] = {
+        Normal = {
+            ['Enabled'] = true,
+            ['ThirdPerson'] = false,
+            ['FirstPerson'] = false,
+        },
+        Prediction = {
+            ['Enabled'] = true,
+            ['Prediction'] = 0.12567724521,
+        },
+        HitPart = {
+            ['ClosestPart'] = false,
+            ['AirShot'] = false,
+            ['Part'] = 'HumanoidRootPart',
+            ['AirPart'] = 'Head',
+        },
+        Style = {
+            ['First'] = 'Robot',
+            ['Second'] = 'Line'
+        },
+        Smoothness = {
+            ['Enabled'] = true,
+            ['Smoothness'] = 1,
+            ['AirShot'] = 0.00850,
+        },
+        ShakeValue = {   
+            ['Enabled'] = false,
+            ['DirectionX'] = 8,
+            ['DirectionY'] = 6,
+            ['DirectionZ'] = 7,
+        },
+        KeyBind = {
+            ['Hold'] = true,
+            ['Mode'] = 'Mouse', -- 
+            ['KeyBind'] = 'c',
+            ['MouseBind'] = MouseButton2,
+        },
+    },
+    TargetAim = {
+        ['KeyBind'] = "C",
+        ['Prediction'] = 0.137,
+        ['Parts'] = "Head",
+        ['Shake'] = 0, 
+        ['JumpPrediction'] = -2.50,
+        ['CheckIfJumped'] = false
+        ['Resolver Tuning'] = 0.2,
+        ['Smoothing'] = 0.10,
+        ['Tracer'] = false,
+        ['Highlight'] = false,
+        ['LookAt'] = false,
+        ['Stats'] = false,
+        ['Box'] = false, -- bugged on solara
+        ['Dtc'] = false,
+        ['Strafe'] = false,
+    Strafe ={
+        ['TargetStrafe'] = false,
+        ['StrafeRadius'] = 10,
+        ['StrafeSpeed'] = 5,
+        ['StrafeHeight'] = 0,
+
+        ['Notify'] = true,
+
+        ['LookAt'] = false,
+        ['Spectate'] = false,
+        },
+    }, 
+    ['Fov'] = {
+        CamLock = {
+            ['Show'] = false,
+            ['UseRadius'] = false,
+            ['Radius'] = 44,
+            ['Model'] = 'Circle'
+        },
+        SilentAim = {
+            ['Show'] = true,
+            ['UseRadius'] = false,
+            ['Radius'] = 14,
+            ['Model'] = 'Circle'
+        },
+        TargetAim = {
+            ['Show'] = true,
+            ['UseRadius'] = false,
+            ['Radius'] = 14,
+            ['Model'] = 'Circle'
+        },
+        DottedFOV = {
+            ['ShowDots'] = true,
+            ['Rainbow'] = true,
+            ['DotSize'] = 2,
+            ['Radius'] = 150,
+            ['Color'] = Color3.fromRGB(255, 255, 255)
+            },
+        },
+    },
+    ['Adjustment'] = {
+      ['Checks'] = {
+            ['Resolver'] = true,
+            ['Anti_Aim_Viewer'] = true,
+            ['WallCheck'] = true,
+            ['Disable_Ground_Shots'] = true,
+            ['CrewCheck'] = false,
+            ['KoCheck'] = true,
+            ['AntiCurve'] = true,
+            ['NoGroundShots'] = true,
+        },
+        ['GunFov'] = {
+            ['Enabled'] = false,
+            ['DoubleBarrel'] = 40,
+            ['Revolver'] = 20,
+            ['Shotgun'] = 55,
+            ['TacticalShotgun'] = 40,
+            ['Smg'] = 25,
+            ['Silencer'] = 32.5,
+            ['P90'] = 40.2,
+            ['Ak47'] = 50,
+            ['DrumGun'] = 60,
+        },
+
+        ['TriggerBot'] = {
+            ['Enabled'] = false,
+            ['Delay'] = 0.3,
+                KeyBinds = {
+                    ['Enabled'] = true,
+                    ['Notifications'] = true,
+                    ['KeyBind'] = 'C',
+            },
+        },
+        ['Memory'] = {
+            ['Enable'] = false,
+            ['Start'] = 771,
+            ['End'] = 824,
+            ['Speed'] = 1,
+            }
+        },
+        ['Spin'] = {
+            ['Enabled'] = true,
+            ['RotationSpeed'] = 2500, 
+            ['Keybind'] = Enum.KeyCode.V,
+        },
+    },
+},
